@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Théo</title>
+
+    <!-- Lien vers SWIPER CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
+    <!-- Lien vers BOX ICONS -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- Lien vers le CSS PERSONNALISÉ -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- LE HEADER -->
+    <header class="header">
+        <a href="#" class="logo">P<span>ortfolio</span></a>
+
+        <!-- LA NAVBAR -->
+        <nav class="navbar">
+            <a href="#accueil" class="active">Accueil</a>
+            <a href="#apropos">À propos</a>
+            <a href="#services">Services</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+        <div class="bx bx-moon" id="darkMode-icon"></div>
+
+        <div class="bx bx-menu" id="menu-icon"></div>
+    </header>
+    <!-- FIN DU HEADER-->
+
+    <!-- SECTION ACCUEIL -->
+    <section class="accueil" id="accueil">
+        <div class="accueil-content">
+            <h3>Bonjour, je suis </h3>
+            <h1>Théo VERGER</h1>
+            <p>J'aime bien manipuler diverses technologies
+            pour réaliser de belles applications
+            fonctionnelles !</p>
+
+            <div class="social-media">
+                <a href="https://www.facebook.com/theo.verger.33">
+                    <i class='bx bxl-facebook'></i>
+                </a>
+                <a href="https://twitter.com/?lang=fr">
+                    <i class='bx bxl-twitter'></i>
+                </a>
+                <a href="https://www.instagram.com">
+                    <i class='bx bxl-instagram-alt'></i>
+                </a>
+                <a href="https://www.linkedin.com/in/theo-verger/">
+                    <i class='bx bxl-linkedin'></i>
+                </a>
+            </div>
+
+            <a href="img/CV-Theo.pdf" class="btn">Télécharger CV</a>
+        </div>
+
+        <div class="profession-container">
+            <div class="overlay"></div>
+        </div>
+
+        <div class="accueil-img">
+            <img src="img/profil.png" alt="photo de profil de Théo Verger">
+        </div>
+    </section>
+
+    <!-- SECTION À PROPOS -->
+    <section class="apropos" id="apropos">
+        <div class="apropos-img">
+            <img src="img/profil.png" alt="photo de profil de Théo Verger">
+        </div>
+
+        <div class="apropos-content">
+            <h2 class="heading">À propos de <span>moi</span></h2>
+            <h3>Je suis là pour vous aider à concrétiser vos idées !</h3>
+            <p>Je suis un jeune développeur FullStack
+            qui aime relever différents types de défis :
+            <br>
+            <br>
+            Frontend ou Backend</p>
+            <a href="#contact" class="btn">Contact</a>
+        </div>
+    </section>
+
+    <!-- SECTION SERVICES -->
+    <section class="services" id="services">
+        <h2 class="heading">Mes <span>Services</span></h2>
+
+        <div class="services-container">
+            <div class="services-box">
+                <i class='bx bx-code-alt'></i>
+                <h3>Développement Web</h3>
+                <br>
+                <a href="#" class="btn">En savoir +</a>
+            </div>
+            <div class="services-box">
+                <i class='bx bxs-paint'></i>
+                <h3>Design Graphique</h3>
+                <br>
+                <a href="#" class="btn">En savoir +</a>
+            </div>
+            <div class="services-box">
+                <i class='bx bx-bar-chart-alt'></i>
+                <h3>Marketing Digital</h3>
+                <br>
+                <a href="#" class="btn">En savoir +</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION PORTFOLIO -->
+    <section class="portfolio" id="portfolio">
+        <h2 class="heading">Mes derniers <span>Projets</span></h2>
+
+        <div class="portfolio-container">
+            <div class="portfolio-box">
+                <img src="img/Projet 1.png" alt="premier projet">
+
+                <div class="portfolio-layer">
+                    <h4>Projet 1</h4>
+                    <a href="#"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+
+            <div class="portfolio-box">
+                <img src="img/Projet 2.png" alt="deuxième projet">
+
+                <div class="portfolio-layer">
+                    <h4>Projet 2</h4>
+                    <a href="#"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+
+            <div class="portfolio-box">
+                <img src="img/Projet 3.png" alt="troisième projet">
+
+                <div class="portfolio-layer">
+                    <h4>Projet 3</h4>
+                    <a href="#"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION CONTACT -->
+    <section class="contact" id="contact">
+        <h2 class="heading">Contactez-<span>moi</span> !</h2>
+
+        <form action="mailto:theo.verger3@gmail.com" method="get">
+            <div class="input-box">
+                <input type="text" placeholder="Nom" required>
+                <input type="email" placeholder="Email" required>
+            </div>
+            <div class="input-box">
+                <input type="number" placeholder="Mobile">
+                <input type="text" placeholder="Objet">
+            </div>
+            <textarea name="" id="" cols="30" rows="10" placeholder="Message"></textarea>
+            <input type="submit" value="Envoyer" class="btn">
+        </form>
+    </section>
+
+    <!-- SECTION FOOTER -->
+    <footer class="footer">
+        <div class="footer-text">
+            <p>Copyright &copy; 2023 by Théo VERGER | All Rights Reserved.</p>
+        </div>
+    </footer>
+
+      <!-- scroll reveal -->
+      <script src="https://unpkg.com/scrollreveal"></script>
+
+      <!-- swiper js -->
+      <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  
+      <!-- custom js -->
+      <script src="js/script.js"></script>
+</body>
+</html>
